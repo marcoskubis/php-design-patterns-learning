@@ -12,6 +12,14 @@
 - Encapsule o que varia.
 - Dê prioridade à composição em relação a herança.
 - Programe para uma interface, não para um implementação.
+- Busque projetos levemente ligados entre objetos que interagem.
+- As classes devem estar abertas para extensão, mas fechadas para modificação.
+- Dependa de abstrações. Não dependa de classes concretas.
+- Princípio do mínimo conhecimento - Só fale com seus amigos mais próximos. A partir do próprio objeto, só podemos invocar métodos que pertençam:
+	- Ao próprio objeto;
+	- A objetos que tenham sido passados como parâmetros para o método;
+	- A qualquer objeto que seja criado ou instanciado pelo método;
+	- A quaisquer componentes do objeto. (Qualquer objeto que seja referenciado por uma variável de instância)
 
 ## Design Patterns
 
