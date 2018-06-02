@@ -27,6 +27,7 @@
 
 Define uma famíla de algorítimos, encapsula cada um deles e os torna intercambiáveis.
 A estratégia deixa o algorítimo variar independentemente dos clientes que o utilizam.
+[strategy.php](strategy.php)
 
 ### Observer
 
