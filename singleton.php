@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  Singleton
+ * Singleton
  *
  * Garente que uma classe tenha apenas um instância e fornece um ponto global de acesso a ela.
  */

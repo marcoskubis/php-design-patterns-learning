@@ -4,7 +4,7 @@
  * Strategy
  *
  * Define uma famíla de algorítimos, encapsula cada um deles e os torna intercambiáveis.
- * A estratégio deixa o algorítimo variar independentemente dos clientes que o utilizam.
+ * A estratégia deixa o algorítimo variar independentemente dos clientes que o utilizam.
  */
 
 abstract class Duck {

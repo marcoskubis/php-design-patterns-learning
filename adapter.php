@@ -3,7 +3,7 @@
 /**
  * Adapter
  *
- * Converter a interface de um classe para outra interface que o cliente espera econtrar.
+ * Converte a interface de um classe para outra interface que o cliente espera econtrar.
  * O adaptador permite que classes com interfaces incompatíveis trabalhem juntas.
  */
 
