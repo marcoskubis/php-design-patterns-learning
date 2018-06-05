@@ -20,6 +20,9 @@
 	- A objetos que tenham sido passados como parâmetros para o método;
 	- A qualquer objeto que seja criado ou instanciado pelo método;
 	- A quaisquer componentes do objeto. (Qualquer objeto que seja referenciado por uma variável de instância)
+- Princípio Hollywood: Não nos telefone, nós telefonamos para você.
+	- Evitar o colapso de dependências.
+	- Exemplo: A trait de autenticação do Laravel `Illuminate\Foundation\Auth\AuthenticatesUsers`.
 
 ## Design Patterns
 
