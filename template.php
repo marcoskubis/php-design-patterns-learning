@@ -13,7 +13,9 @@ abstract class CaffeineBeverage {
         $this->boilWater();
         $this->brew();
         $this->pourInCup();
-        $this->addCondiments();
+        if ($this->customerWantsCondiments()) {
+            $this->addCondiments();
+        }
     }
 
     public function boilWater()
@@ -28,6 +30,11 @@ abstract class CaffeineBeverage {
 
     abstract public function brew();
     abstract public function addCondiments();
+
+    public function customerWantsCondiments(): Bool
+    {
+        return true;
+    }
 }
 
 class Tea extends CaffeineBeverage {
@@ -51,6 +58,24 @@ class Coffe extends CaffeineBeverage {
     public function addCondiments()
     {
         echo "Adding sugar and milk" . PHP_EOL;
+    }
+
+    public function customerWantsCondiments(): Bool
+    {
+        $answer = $this->getUserInput();
+        if (substr(strtolower($answer), 0, 1) === "y") {
+            return true;
+        }
+        return false;
+    }
+
+    protected function getUserInput()
+    {
+        $answer = readline("Would you like milk and sugar with your coffe (y/n)? ");
+        if (!$answer) {
+            $answer = "no";
+        }
+        return $answer;
     }
 }
 
