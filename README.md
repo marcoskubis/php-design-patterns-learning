@@ -88,3 +88,9 @@ Define o esqueleto de um algoritimo dentro de um método, transferindo alguns de
 passos para as subclasses. O template method permite que as subclasses redefinam certos
 passos de algoritimo sem alterar a estrutura do própro algoritimo.
 Exemplo: [template.php](template.php).
+
+### Iterator
+
+O Padrão Iterator fornece uma maneira de acessar sequencialmente os elementos de um objeto agregado
+sem expor a sua representação subjacente.
+Exemplo: [iterator.php](iterator.php)

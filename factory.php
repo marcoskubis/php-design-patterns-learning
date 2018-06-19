@@ -231,5 +231,6 @@ $store = new NYPizzaStore;
 $store->orderPizza("cheese");
 
 $store = new ChicagoPizzaStore;
-$store->orderPizza("cheese");
-echo $store->orderPizza("clam");
+$cheesePizza = $store->orderPizza("cheese");
+$clamPizza = $store->orderPizza("clam");
+echo $clamPizza;
